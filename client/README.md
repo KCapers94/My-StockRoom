@@ -1,12 +1,14 @@
-# My StockRoom
+# Name 
 
-## Introduction
+My StockRoom
+
+## Description
 
 This is great way for you to create your own inventory so that you can be the best reseller or collector you can.
 
-## Conclusion
+## License
 
-Thanks for checking this out!
+MIT
 
 ---
 
