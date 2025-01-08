@@ -19,8 +19,8 @@ function NewItem({handleAddItem, categories, marketPlaces}) {
     const formik = useFormik({
              initialValues: {
                  name: "",
-                 purchase_price: 0,
-                 sell_price: 0,
+                 purchase_price: "",
+                 sell_price: "",
                  category_id: "",
                  market_place_id: "",
              },
@@ -49,6 +49,7 @@ function NewItem({handleAddItem, categories, marketPlaces}) {
                 onChange={formik.handleChange} 
                 value={formik.values.name}
             />
+             <p style={{ color: "red" }}> {formik.errors.name}</p>
             <label htmlFor="purchase price">Purchase Price:</label>
             <input 
                 id="purchase_price"
@@ -56,6 +57,7 @@ function NewItem({handleAddItem, categories, marketPlaces}) {
                 onChange={formik.handleChange} 
                 value={formik.values.purchase_price}
             />
+             <p style={{ color: "red" }}> {formik.errors.purchase_price}</p>
             <label htmlFor="sell price">Sell Price:</label>
             <input 
                 id="sell_price"
@@ -63,6 +65,7 @@ function NewItem({handleAddItem, categories, marketPlaces}) {
                 onChange={formik.handleChange} 
                 value={formik.values.sell_price}
             />
+             <p style={{ color: "red" }}> {formik.errors.sell_price}</p>
             <select 
                 id="category_id"
                 name="category_id"

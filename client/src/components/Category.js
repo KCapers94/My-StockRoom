@@ -50,6 +50,7 @@ function Category() {
                 value={formik.values.name}
                 onChange={formik.handleChange}
             />
+             <p style={{ color: "red" }}> {formik.errors.name}</p>
             <button type='submit'>Add Category</button>
           </form>
            {categories.map((cat) => (

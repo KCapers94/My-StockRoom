@@ -46,6 +46,7 @@ function MarketPlace() {
                 value={formik.values.name}
                 onChange={formik.handleChange}
             />
+             <p style={{ color: "red" }}> {formik.errors.name}</p>
             <button type='submit'>Add Market Place</button>
           </form>
            {marketPlaces.map((item) => (
